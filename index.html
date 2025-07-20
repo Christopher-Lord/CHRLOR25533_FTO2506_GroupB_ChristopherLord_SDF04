@@ -9,31 +9,32 @@
    <body>
       <footer class="bg-[#659f8f] dark:bg-[#313131]">
          <!-- Form Section -->
-         <section class="footer-form">
-            <p class="large-heading">
-               Subscribe to our newsletter for updates.
-            </p>
+         <section class="form-container">
+            <h2>Subscribe to our newsletter for updates.</h2>
 
             <form action="post">
                <div class="form-email">
+                  <!-- Label for screen readers -->
                   <label for="email" class="visually-hidden"
                      >Email Address</label
                   >
                   <input
-                     class="email"
+                     class="email-input"
                      type="email"
                      name="email"
                      id="email"
                      placeholder="Email Address"
+                     required
                   />
                </div>
 
                <div class="form-btn">
+                  <!-- Label for screen readers -->
                   <label for="subscribe" class="visually-hidden"
                      >Subscribe Button</label
                   >
                   <input
-                     class="btn"
+                     class="btn-input"
                      type="submit"
                      name="subscribe"
                      id="subscribe"
@@ -46,7 +47,7 @@
 
          <!-- Quick Links Section -->
          <section class="quick-links">
-            <p class="small-heading">Quick Link</p>
+            <h3>Quick Link</h3>
             <ul>
                <li><a href="#">Home</a></li>
                <li><a href="#">Who We Are</a></li>
@@ -57,7 +58,7 @@
 
          <!-- Technologies section -->
          <section class="technologies">
-            <p class="small-heading">Technologies</p>
+            <h3>Technologies</h3>
             <ul>
                <li><a href="#">HTML</a></li>
                <li><a href="#">CSS</a></li>
@@ -69,16 +70,14 @@
          <hr />
 
          <!-- img section -->
-         <section class="container px-6 py-12 mx-auto">
-            <div class="flex">
-               <a href="https://www.codespace.co.za/" target="_blank">
-                  <img
-                     class="w-auto h-7"
-                     src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
-                     alt="CodeSpace Logo"
-                  />
-               </a>
-            </div>
+         <section class="logo-container">
+            <a href="https://www.codespace.co.za/" target="_blank">
+               <img
+                  class="w-auto h-7"
+                  src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+                  alt="CodeSpace Logo"
+               />
+            </a>
          </section>
          <!-- End of img section -->
       </footer>
